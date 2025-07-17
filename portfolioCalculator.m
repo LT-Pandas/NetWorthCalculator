@@ -21,7 +21,7 @@ total_value = 0;
 for i = 1:height(portfolio1)
     ticker = portfolio1.Ticker{i};
     shares = portfolio1.Shares(i);
-    apikey1 = 'YSEYFVLIHNHR3C5Z';
+    apikey1 = '----------------';
 
     % Initialize the API Key:
     url = ['https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=' ticker '&interval=5min&apikey=' apikey1];
@@ -46,7 +46,7 @@ end
 for i = 1:height(portfolio2)
     ticker = portfolio2.Ticker{i};
     shares = portfolio2.Shares(i);
-    apikey2 = '0LA0JXKT0MGXLPQ4';
+    apikey2 = '----------------';
 
     % Initialize the API Key:
     url = ['https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=' ticker '&interval=5min&apikey=' apikey2];
